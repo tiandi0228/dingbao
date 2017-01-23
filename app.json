@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/buy/index",
+    "pages/user/index",
+    "pages/about/index",
+    "pages/contact/index",
+    "pages/pay/index",
+    "pages/deliveryAddress/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#555",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#7a7e83",  
+    "selectedColor": "#1296db",  
+    "borderStyle": "#b2b2b2",  
+    "backgroundColor": "#f9f9f9",  
+    "list": [
+      {  
+        "text": "首页",  
+        "pagePath": "pages/index/index",  
+        "iconPath": "images/home.png",  
+        "selectedIconPath": "images/home-actived.png"  
+      },  
+      {  
+        "text": "个人中心",  
+        "pagePath": "pages/user/index",  
+        "iconPath": "images/user.png",  
+        "selectedIconPath": "images/user-actived.png"  
+      }
+    ]
+  }  
+}

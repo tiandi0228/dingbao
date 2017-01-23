@@ -1,0 +1,23 @@
+<view class="container">
+  <swiper>
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="nav">
+    <navigator url="../buy/index" class="item subscribe">
+      <text class="title">订报</text>
+    </navigator>
+    <navigator url="../buy/index" class="item subscribe">
+      <text class="title">订报</text>
+    </navigator>
+    <navigator url="../buy/index" class="item subscribe">
+      <text class="title">订报</text>
+    </navigator>
+    <navigator url="../buy/index" class="item subscribe">
+      <text class="title">订报</text>
+    </navigator>
+  </view>
+</view>

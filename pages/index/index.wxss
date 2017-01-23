@@ -1,0 +1,25 @@
+.container {
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.item {
+  width: 21%;
+  background-color: #f00;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2%;
+  padding: 8% 0;
+  text-align: center;
+}
+
+.item .title {
+}

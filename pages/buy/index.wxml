@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="list">
+    <view class="info">
+      <image class="logo" src="../../images/20151102161632_1.jpg" background-size="cover"></image>
+      <view class="con">
+        <text class="name">浙江法制报</text>
+        <text class="copies">一周五报</text>
+        <text class="price">单价：{{price}}元/年</text>
+        <text class="year">年份：{{year}}</text>
+        <picker bindchange="bindPickerChange" value="{{dates[date]}}" range="{{dates}}">
+          <view class="picker">
+            日期：{{dates[date]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="num">
+      <view class="reduce" bindtap="bindReduce">-</view>
+      <input type="number" bindinput="bindNumber" value="{{num}}" />
+      <view class="plus" bindtap="bindPlus">+</view>
+    </view>
+  </view>
+  <view class="payment">
+    <text bindtap="bindPayment" class="btn">结算</text>
+    <text class="total">总计：{{total}}元</text>
+  </view>
+</view>

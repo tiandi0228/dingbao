@@ -1,0 +1,39 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="list">
+      <input name="username" value="{{username}}" placeholder="姓名" />
+    </view>
+    <view class="list">
+      <input name="phone" value="{{phone}}" placeholder="手机号码" />
+    </view>
+    <view class="list" bindtap="open">
+      <text class="city">{{province}}{{city}}{{county}}</text>
+    </view>
+    <view class="list">
+      <input name="postcode" value="{{postcode}}" placeholder="邮政编码" />
+    </view>
+    <view class="address">
+      <textarea name="address" value="{{address}}" placeholder="详细地址" />
+    </view>
+    <view>
+      <button type="primary" formType="submit">保存</button>
+    </view>
+  </form>
+</view>
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-true">确定</view>
+    </view>
+    <picker-view-column class="cityitem">
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column class="cityitem">
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column class="cityitem">
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+<view class="make" wx:if="{{condition}}"></view>

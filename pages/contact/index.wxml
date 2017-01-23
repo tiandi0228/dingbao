@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="list-con">
+    <navigator class="list" url="../deliveryAddress/index">
+      <text class="name">我的收货地址</text>
+      <text class="icon iconfont icon-jiantou"></text>
+    </navigator>
+    <!--<navigator class="list" url="../contactEdit/index?id=2">
+      <text class="name">手机</text>
+      <text class="icon iconfont icon-jiantou"></text>
+      <text class="info">{{phone}}</text>
+    </navigator>
+    <navigator class="list" url="../contactEdit/index?id=3">
+      <text class="name">地址</text>
+      <text class="icon iconfont icon-jiantou"></text>
+      <text class="info">{{address}}</text>
+    </navigator>-->
+  </view>
+</view>

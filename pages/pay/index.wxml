@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="box">
+    <text class="item">金额：{{total}}</text>
+    <text class="item">份数：{{num}}</text>
+    <text class="item">订阅日期：{{date}}</text>
+    <text class="item">订单号：{{order}}</text>
+    <text class="item">购买日期：{{time}}</text>
+    <text class="item">联系人：{{username}}</text>
+    <text class="item">联系电话：{{phone}}</text>
+    <text class="item">邮政编码：{{postcode}}</text>
+    <text class="item">送报地址：{{address}}</text>
+  </view>
+  <button type="primary" bindtap="primary">付款</button>
+</view>

@@ -1,0 +1,11 @@
+.container {
+  padding: 10px;
+}
+
+.container .p {
+  padding-top: 10px;
+  overflow: hidden;
+  line-height: 180%;
+  display: block;
+  text-indent: 2em;
+}
