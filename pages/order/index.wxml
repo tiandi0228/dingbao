@@ -1,0 +1,13 @@
+<view class="container">
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list-con" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
+    <navigator class="list" url="../orderDetail/index" wx:key="unique" wx:for="{{list}}">
+      <text class="title">{{item.name}}</text>
+      <text class="icon iconfont icon-jiantou"></text>
+    </navigator>
+  </scroll-view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>
+</view>

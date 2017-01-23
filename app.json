@@ -6,7 +6,9 @@
     "pages/about/index",
     "pages/contact/index",
     "pages/pay/index",
-    "pages/deliveryAddress/index"
+    "pages/deliveryAddress/index",
+    "pages/order/index",
+    "pages/orderDetail/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

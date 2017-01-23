@@ -4,7 +4,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="list-con">
-    <navigator class="list" url="../contact/index">
+    <navigator class="list" url="../order/index">
       <text class="name">订报账单</text>
       <text class="icon iconfont icon-jiantou"></text>
     </navigator>
