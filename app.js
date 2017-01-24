@@ -1,10 +1,27 @@
 App({
   // 应用程序启动时触发一次
   onLaunch: function () {
+    wx.login({
+      success: function (res) {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx003b9756954779f5&secret=13b007849f7a55c154f2ceb11972901d&grant_type=authorization_code&js_code=' + res.code,
+            header: {
+              'content-type': 'application/json'
+            },
+            success: function (res) {
+              console.log(res.data.openid)
+            }
+          })
+        }
+      }
+    });
   },
   onLoad: function () {
 
   },
+  // 获取用户数据库信息
   getUser: function () {
     var that = this
     var person = {}
@@ -24,6 +41,7 @@ App({
         success: function () {
           wx.getUserInfo({
             success: function (res) {
+              console.log(res)
               that.globalData.userInfo = res.userInfo
               typeof cb == "function" && cb(that.globalData.userInfo)
             }
