@@ -12,7 +12,7 @@ Page({
         order: ''
     },
     primary: function () {
-        console.log(app.globalData.user.address)
+        console.log(1111111)
     },
     onLoad: function () {
         app.getUser()

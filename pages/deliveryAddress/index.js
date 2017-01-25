@@ -17,14 +17,6 @@ Page({
         condition: false,
         postcode: ''
     },
-    // 姓名
-    bindUserName: function (e) {
-
-    },
-    // 联系电话
-    bindPhone: function (e) {
-
-    },
     // 省市区联动
     bindChange: function (e) {
         var val = e.detail.value
@@ -75,6 +67,7 @@ Page({
             return;
         }
     },
+    // 联动显示隐藏
     open: function () {
         this.setData({
             condition: !this.data.condition
